@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
               href='favicon.png'
             />
 
-            <link rel='manifest' href='/manifest.json' />
+            <link rel='manifest' href='/site.webmanifest' />
           </Head>
 
           <body>
