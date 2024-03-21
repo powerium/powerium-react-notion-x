@@ -7,6 +7,20 @@
  * places to add some flare.
  */
 
+:root {
+  --notion-font: system-ui, sans-serif;
+  --select-color-0: rgb(91 33 182);
+}
+
+.dark-mode {
+  --bg-color: #000;
+  --bg-color-0: rgb(38 38 38);
+  --bg-color-1: rgb(23 23 23);
+  --bg-color-2: rgba(115 115 115 0.15);
+
+  --select-color-0: rgb(193 165 275);
+}
+
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
@@ -352,6 +366,7 @@
   border-radius: 50%;
   box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
 }
+
 .notion-page-icon-hero.notion-page-icon-image span,
 .notion-page-icon-hero.notion-page-icon-image img {
   border-radius: 50%;
@@ -380,14 +395,6 @@
   border-image-slice: 1;
 }
 
-.notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-column {
-  padding: 0;
-}
-
-.notion-block-260baa77f1e1428b97fb14ac99c7c385 {
-  display: none;
-}
-
 .notion-search .searchBar {
   box-shadow: var(--fg-color-0) 0px 1px 0px;
 }
@@ -400,6 +407,6 @@
   color: var(--fg-color-2);
 }
 
-.notion-equation.notion-equation-block{
+.notion-equation.notion-equation-block {
   align-items: center;
 }
