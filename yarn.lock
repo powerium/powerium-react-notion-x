@@ -95,10 +95,10 @@
   dependencies:
     json-buffer "~3.0.1"
 
-"@keyvhq/redis@^1.6.10":
-  version "1.6.28"
-  resolved "https://registry.yarnpkg.com/@keyvhq/redis/-/redis-1.6.28.tgz#45186f58569a50e974ff4308b10c6faed6182be2"
-  integrity sha512-krF2d1smWf4JUm26DUjwhucMCw+OVTCleg94jJdDZQPvM291FI/8B6B9K1TxiN+cZDk0MBPZmWMIY+2nAhn/gA==
+"@keyvhq/redis@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@keyvhq/redis/-/redis-2.1.0.tgz#9a7f44784a447503553e3b5137e3c4758b0557ed"
+  integrity sha512-fneBKwbEJ+wb6WDvdr7hEV2/6zEHNI/PFL5kvxAhO4XvmRsE0nwBghMUk6RVC0H5d47v7p1b9Kdoa4Nh3tUtCw==
   dependencies:
     ioredis "~5.3.0"
     p-event "~4.2.0"

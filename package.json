@@ -27,7 +27,7 @@
   "dependencies": {
     "@fisch0920/use-dark-mode": "^2.4.0",
     "@keyvhq/core": "^1.6.9",
-    "@keyvhq/redis": "^1.6.10",
+    "@keyvhq/redis": "^2.1.0",
     "@react-icons/all-files": "^4.1.0",
     "@vercel/analytics": "^1.2.2",
     "@vercel/og": "^0.6.2",
