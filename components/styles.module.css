@@ -19,8 +19,7 @@
   line-height: 1.5;
   color: rgb(55, 53, 47);
   caret-color: rgb(55, 53, 47);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
-    'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: system-ui, sans-serif;
   background-color: var(--bg-color);
 }
 
@@ -52,13 +51,16 @@
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .copyright {
   font-size: 80%;
   padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .settings,
@@ -86,38 +88,6 @@
   transition: color 50ms ease-out;
 }
 
-.toggleDarkMode:hover {
-  color: #2795e9;
-}
-
-.twitter:hover {
-  color: #2795e9;
-}
-
-.mastodon:hover {
-  color: #5a4be1;
-}
-
-.zhihu:hover {
-  color: #0066ff;
-}
-
-.github:hover {
-  color: #c9510c;
-}
-
-.youtube:hover {
-  color: #ff0000;
-}
-
-.linkedin:hover {
-  color: #0077b5;
-}
-
-.newsletter:hover {
-  color: #777777;
-}
-
 .comments {
   width: 100%;
   margin-top: 2em;
@@ -136,9 +106,11 @@
   .footer .settings {
     order: 1;
   }
+
   .footer .social {
     order: 2;
   }
+
   .footer .copyright {
     order: 3;
   }
@@ -178,41 +150,6 @@
 .retweet:hover {
   color: #19bf64;
   background: #e5f2e8;
-}
-
-@media (max-width: 1360px) {
-  .githubCorner {
-    display: none;
-  }
-}
-
-.githubCorner:hover .octoArm {
-  animation: octocat-wave 560ms ease-in-out;
-}
-
-@keyframes octocat-wave {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-  20%,
-  60% {
-    transform: rotate(-25deg);
-  }
-  40%,
-  80% {
-    transform: rotate(10deg);
-  }
-}
-
-@media (max-width: 500px) {
-  .githubCorner:hover .octoArm {
-    animation: none;
-  }
-
-  .githubCorner .octoArm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
 }
 
 .hidden {

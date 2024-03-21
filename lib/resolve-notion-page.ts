@@ -39,7 +39,7 @@ export async function resolveNotionPage(domain: string, rawPageId?: string) {
         // console.log(`redis get "${cacheKey}"`, pageId)
       } catch (err) {
         // ignore redis errors
-        console.warn(`redis error get "${cacheKey}"`, err.message)
+        console.warn("redis error get %s %s", cacheKey, err.message)
       }
     }
 
@@ -66,7 +66,7 @@ export async function resolveNotionPage(domain: string, rawPageId?: string) {
             // console.log(`redis set "${cacheKey}"`, pageId, { cacheTTL })
           } catch (err) {
             // ignore redis errors
-            console.warn(`redis error set "${cacheKey}"`, err.message)
+            console.warn("redis error set %s %s", cacheKey, err.message)
           }
         }
       } else {
