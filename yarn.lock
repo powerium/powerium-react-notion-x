@@ -2272,7 +2272,8 @@ lowercase-keys@^3.0.0:
 
 "lqip-modern@https://github.com/powerium/lqip-modern.git#master":
   version "2.0.0"
-  resolved "https://github.com/powerium/lqip-modern.git#1fedf2c7b2b784e65e65233d2971bcd5abe0a256"
+  uid e8bfb73f5dda83568a25e3f0ade59097d4676c88
+  resolved "https://github.com/powerium/lqip-modern.git#e8bfb73f5dda83568a25e3f0ade59097d4676c88"
   dependencies:
     p-map "^4.0.0"
     sharp "^0.33.3"
