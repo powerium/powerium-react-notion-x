@@ -409,13 +409,12 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.12.tgz#12bb1e2be27293c1406acb6af1c3f3a1481d98c6"
   integrity sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==
 
-"@types/react@^18.0.21":
-  version "18.2.69"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.69.tgz#313ec21891b22bb7646a54cb4bdb8cddb0880271"
-  integrity sha512-W1HOMUWY/1Yyw0ba5TkCV+oqynRjG7BnteBB+B7JmAK7iw3l2SW+VGOxL+akPweix6jk2NNJtyJKpn4TkpfK3Q==
+"@types/react@^18.2.72":
+  version "18.2.72"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.72.tgz#3341a6d0746d1c7d8510810319323850c04bd6ed"
+  integrity sha512-/e7GWxGzXQF7OJAua7UAYqYi/4VpXEfbGtmYQcAQwP3SjjjAXfybTf/JK5S+SaetB/ChXl8Y2g1hCsj7jDXxcg==
   dependencies:
     "@types/prop-types" "*"
-    "@types/scheduler" "*"
     csstype "^3.0.2"
 
 "@types/responselike@^1.0.0":
@@ -424,11 +423,6 @@
   integrity sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==
   dependencies:
     "@types/node" "*"
-
-"@types/scheduler@*":
-  version "0.16.8"
-  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.8.tgz#ce5ace04cfeabe7ef87c0091e50752e36707deff"
-  integrity sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==
 
 "@types/semver@^7.3.12":
   version "7.5.8"
@@ -2272,7 +2266,8 @@ lowercase-keys@^3.0.0:
 
 "lqip-modern@https://github.com/powerium/lqip-modern.git#master":
   version "2.0.0"
-  resolved "https://github.com/powerium/lqip-modern.git#1fedf2c7b2b784e65e65233d2971bcd5abe0a256"
+  uid e8bfb73f5dda83568a25e3f0ade59097d4676c88
+  resolved "https://github.com/powerium/lqip-modern.git#e8bfb73f5dda83568a25e3f0ade59097d4676c88"
   dependencies:
     p-map "^4.0.0"
     sharp "^0.33.3"
@@ -2818,10 +2813,10 @@ postcss@8.4.31:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-posthog-js@^1.116.3:
-  version "1.116.5"
-  resolved "https://registry.yarnpkg.com/posthog-js/-/posthog-js-1.116.5.tgz#43b6c03f53c7afe5937778347551b5b8238c1a78"
-  integrity sha512-Dfsy07WGPRqbXNQgfhR5zhcQw4A078xCRX1y0oGmy8xVUmL6QLNNTVKENB4xpo45Ox+88cysi+hEMhd9SfV5Qg==
+posthog-js@^1.116.6:
+  version "1.116.6"
+  resolved "https://registry.yarnpkg.com/posthog-js/-/posthog-js-1.116.6.tgz#9a5c9f49230a76642f4c44d93b96710f886c2880"
+  integrity sha512-rvt8HxzJD4c2B/xsUa4jle8ApdqljeBI2Qqjp4XJMohQf18DXRyM6b96H5/UMs8jxYuZG14Er0h/kEIWeU6Fmw==
   dependencies:
     fflate "^0.4.8"
     preact "^10.19.3"
