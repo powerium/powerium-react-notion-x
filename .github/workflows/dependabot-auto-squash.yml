@@ -1,0 +1,52 @@
+name: Dependabot auto-squash
+on: pull_request
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  await-vercel-preview:
+    name: Await Vercel Preview
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Await Successful Vercel Preview Deployment
+        uses: wbeuil/wait-for-deployment@v1.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          timeout: 600
+
+  dependabot-approve:
+    name: Approve Dependabot PR
+    needs: await-vercel-preview
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1
+        with:
+          github-token: '${{ secrets.GITHUB_TOKEN }}'
+      - name: Approve a PR
+        run: gh pr review --approve "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  dependabot-squash:
+    name: Squash and merge Dependabot PR
+    needs: dependabot-approve
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1
+        with:
+          github-token: '${{ secrets.GITHUB_TOKEN }}'
+      - name: Auto-Squash Dependabot PR
+        run: gh pr merge --auto --squash --delete-branch "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
