@@ -37,7 +37,7 @@
     "got": "^12.3.0",
     "isomorphic-unfetch": "^4.0.2",
     "lqip-modern": "https://github.com/powerium/lqip-modern.git#master",
-    "next": "^14.2.1",
+    "next": "^14.2.2",
     "notion-client": "^6.16.0",
     "notion-types": "^6.15.6",
     "notion-utils": "^6.15.6",
