@@ -42,5 +42,11 @@
     "**/yarn-error.log*": true,
     "build/Release": true
   },
-  "typescript.tsdk": "./node_modules/typescript/lib"
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "cSpell.words": [
+    "SAWARATSUKI"
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

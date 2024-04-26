@@ -27,12 +27,20 @@ export const Page404: React.FC<types.PageProps> = ({ site, pageId, error }) => {
             )
           )}
 
-          <img
-            src='/404.png'
-            alt='404 Not Found'
-            className={styles.errorImage}
-          />
+          <a href='https://github.com/SAWARATSUKI/ServiceLogos'>
+            <img
+              src='https://raw.githubusercontent.com/SAWARATSUKI/ServiceLogos/main/404Notfound/NotFound.png'
+              alt='404 Not Found'
+              className={styles.errorImage}
+            />
+          </a>
         </main>
+
+        <footer className={styles.footer}>
+          <a href='https://x.com/sawaratsuki1004' className={styles.copyright}>
+            Glyph by Sawaratsuki
+          </a>
+        </footer>
       </div>
     </>
   )
