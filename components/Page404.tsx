@@ -5,8 +5,8 @@ import * as types from '@/lib/types'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
 
-export const Page404: React.FC<types.PageProps> = ({ site, pageId, error }) => {
-  const title = site?.name || 'Notion Page Not Found'
+export const Page404: React.FC<types.PageProps> = ({ site }) => {
+  const title = site?.name || '404 - Page Not Found'
 
   return (
     <>
@@ -14,18 +14,7 @@ export const Page404: React.FC<types.PageProps> = ({ site, pageId, error }) => {
 
       <div className={styles.container}>
         <main className={styles.main}>
-          <h1>Notion Page Not Found</h1>
-
-          {error ? (
-            <p>{error.message}</p>
-          ) : (
-            pageId && (
-              <p>
-                Make sure that Notion page &quot;{pageId}&quot; is publicly
-                accessible.
-              </p>
-            )
-          )}
+          <h1>404 - Page Not Found</h1>
 
           <a href='https://github.com/SAWARATSUKI/ServiceLogos'>
             <img
