@@ -54,7 +54,7 @@
     "sharp": "^0.33.3"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^14.2.2",
+    "@next/bundle-analyzer": "^14.2.3",
     "@types/node": "^20.12.8",
     "@types/react": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
