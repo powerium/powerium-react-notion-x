@@ -16,9 +16,9 @@ export const Page404: React.FC<types.PageProps> = ({ site }) => {
         <main className={styles.main}>
           <h1>404 - Page Not Found</h1>
 
-          <a href='https://github.com/SAWARATSUKI/ServiceLogos'>
+          <a href='https://github.com/SAWARATSUKI/KawaiiLogos'>
             <img
-              src='https://raw.githubusercontent.com/SAWARATSUKI/ServiceLogos/main/404Notfound/NotFound.png'
+              src='https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/404%20NotFound.png'
               alt='404 Not Found'
               className={styles.errorImage}
             />
