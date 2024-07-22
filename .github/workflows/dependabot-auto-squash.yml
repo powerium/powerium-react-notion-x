@@ -15,7 +15,7 @@ jobs:
         uses: wbeuil/wait-for-deployment@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          timeout: 600
+          timeout: 1200
 
   dependabot-approve:
     name: Approve Dependabot PR
