@@ -220,10 +220,10 @@
   dependencies:
     json-buffer "~3.0.1"
 
-"@keyvhq/redis@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@keyvhq/redis/-/redis-2.1.4.tgz#945d7856689c493177a72500b59ab1388853d515"
-  integrity sha512-HI5QEc/Xk33PRuyr58qLSiZ/HkzBo4AHnrpIrpdNSn59VtBA5jX3xKIr6nFECIC3Ziy7qkd42Iz3a3J7INaZOA==
+"@keyvhq/redis@^2.1.5":
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@keyvhq/redis/-/redis-2.1.5.tgz#bc1975b46febd9fad71d098e88629881b3591284"
+  integrity sha512-RePJ9aTe3831artnX/XIQHKJCI7HO4TsFy/XHQw3q/GGH9OHy54OGh6Jv4lmBmRMSrpUmgSMguTzN/F4TyU7cQ==
   dependencies:
     ioredis "~5.4.1"
 
