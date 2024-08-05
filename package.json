@@ -33,7 +33,7 @@
     "@vercel/og": "^0.6.2",
     "classnames": "^2.3.1",
     "expiry-map": "^2.0.0",
-    "fathom-client": "^3.7.0",
+    "fathom-client": "^3.7.2",
     "got": "^12.3.0",
     "isomorphic-unfetch": "^4.0.2",
     "lqip-modern": "https://github.com/powerium/lqip-modern.git#master",
